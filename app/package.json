@@ -1,0 +1,11 @@
+{
+  "name": "floating-todo",
+  "version": "1.4.1",
+  "description": "Floating desktop todo list",
+  "author": "FloatingTodo",
+  "main": "loader.js",
+  "dependencies": {
+    "auto-launch": "^5.0.5",
+    "bytenode": "^1.5.7"
+  }
+}

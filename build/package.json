@@ -1,0 +1,29 @@
+{
+  "name": "floating-todo",
+  "version": "1.4.1",
+  "description": "Floating desktop todo list",
+  "author": "FloatingTodo",
+  "private": true,
+  "build": {
+    "electronVersion": "29.4.6",
+    "appId": "com.floatingtodo.desktop",
+    "productName": "FloatingTodo",
+    "directories": {
+      "app": "../app",
+      "output": ".",
+      "buildResources": "build"
+    },
+    "mac": {
+      "icon": "build/icon.icns",
+      "category": "public.app-category.productivity",
+      "target": [
+        { "target": "dmg", "arch": ["arm64", "x64"] },
+        { "target": "zip", "arch": ["arm64", "x64"] }
+      ],
+      "artifactName": "FloatingTodo-v${version}-mac-${arch}.${ext}",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "extendInfo": { "LSUIElement": true }
+    }
+  }
+}
